@@ -1,2 +1,2 @@
-# word-guesser
+# word-guess
 Created with CodeSandbox
