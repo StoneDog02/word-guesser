@@ -1,12 +1,73 @@
+<link rel="stylesheet" href="master.css" />
+<style>
+  body {
+    margin: 0;
+  }
+  .game-container {
+    background: radial-gradient(#8d00ff, #00f2ff);
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .prompt {
+    font-size: 30px;
+    background: -webkit-radial-gradient(#ffff00, #ff8000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .title {
+    font-size: 100px;
+    background: -webkit-radial-gradient(#ffff00, #ff8000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .again {
+    display: grid;
+    height: 80px;
+    width: 250px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 10;
+    place-items: center;
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 3px;
+    background: -webkit-radial-gradient(#ffff00, #ff8000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .home {
+    display: grid;
+    height: 80px;
+    width: 250px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 200;
+    bottom: 0;
+    place-items: center;
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 3px;
+    background: -webkit-radial-gradient(#ffff00, #ff8000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+</style>
 <div class="game-container">
-  <h1>Word Guess Yo</h1>
-  <h3>Wow you guessed 12 times!</h3>
-  <a href="/play.html">play again?</a>
-  <a href="/index.html">I dont want to play again</a>
+  <h1 class="title">CORRECT</h1>
+  <h3 class="prompt">Wow you got it in __ guesses!</h3>
+  <a href="/play.html" class="again">Play Again?</a>
+  <a href="/index.html" class="home">Main Menu</a>
 </div>
-
-<!-- get rid of these later -->
-
-<a href="/index.html">index</a>
-<a href="/play.html">play</a>
-<a href="/finish.html">finish</a>
