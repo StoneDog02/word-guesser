@@ -3,14 +3,44 @@
     margin: 0;
   }
   .game-container {
-    font-size: 60px;
-    position: relative;
-    height: 100px;
-    width: 100px;
-    background: red;
+    background: radial-gradient(#8d00ff, #00f2ff);
+    color: black;
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .word-guess {
+    font-size: 100px;
+    background: -webkit-radial-gradient(#ffff00, #ff8000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  a {
+    display: grid;
+    height: 80px;
+    width: 250px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    place-items: center;
+    font-size: 50px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 3px;
+    background: -webkit-radial-gradient(#ffff00, #ff8000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 </style>
 <div class="game-container">
-  <h1 class="color-block">Word Guesser</h1>
-  <a href="/play.html">Start</a>
+  <h1 class="word-guess">Word Guesser</h1>
+  <a class="start" href="/play.html">START</a>
 </div>
